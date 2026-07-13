@@ -1,0 +1,33 @@
+body{
+    background: linear-gradient(to bottom,#1F2937,#172030);
+    margin: 0;
+}
+header{
+    background: #263240;
+    display: flex;
+    height: 135px;
+    padding: 15px;
+}
+main{
+    background: linear-gradient(to bottom,#1F2937,#172030);
+    margin: 0px 150px 0px 150px;
+    min-height:600px;
+}
+footer{
+    background: #111827;
+    height: 250px;
+}
+a{
+    text-decoration: none;
+}
+p{
+    margin: 0;
+}
+div{
+    background: #2e3a49;
+    justify-content: center;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+}
+
