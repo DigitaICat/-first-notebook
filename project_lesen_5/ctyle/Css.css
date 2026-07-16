@@ -7,15 +7,17 @@ header{
     display: flex;
     height: 120px;
     padding: 15px;
+    justify-content: space-between;
 }
 main{
     background: linear-gradient(to bottom,#1F2937,#172030);
-    margin: 0px 150px 0px 150px;
+    margin: 0px 120px 0px 120px;
     min-height:600px;
 }
 footer{
     background: #111827;
     height: 250px;
+    justify-content: center;
 }
 a{
     text-decoration: none;
@@ -51,5 +53,17 @@ p{
 }
 #menu{
     display: grid;
+    
+}
+#create{
+    background: #2f353c;
+    border-radius: 20px;
+    padding: 5px;
+    color: #767c84;
+}
+#note{
+    background: #363f49;
+    border-radius: 20px;
+    padding: 15px;
 }
 
