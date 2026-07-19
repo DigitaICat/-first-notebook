@@ -26,8 +26,9 @@ p{
     margin: 0;
 }
 dialog{
-    background: #263240;
-    border: 2px solid #172030;
+    /* display: grid; */
+    background: #222830;
+    border: 2px solid #161c28;
     border-radius: 20px;
     height: 400px;
     width: 500px;
@@ -72,5 +73,51 @@ dialog{
     background: #363f49;
     border-radius: 20px;
     padding: 15px;
+}
+#DivCreate{
+    display: flex;
+    justify-content: right;
+}
+#add{
+    background: #111827;
+    color: #068e33;
+    display: block;
+    /* border: 1px solid rgb(29, 28, 28); */
+    border-radius: 120px;
+}
+#DivClose{
+    display: flex;
+    justify-content: right;
+}
+#BtnClose{
+    
+    background: #111827;
+    color: #068e33;
+    display: block;
+    /* border: 1px solid rgb(29, 28, 28); */
+    border-radius: 120px;
+}
+
+#InputName{
+    background: #172030;
+    border-radius: 20px;
+    color: #b1b7be;
+}
+#InputMain{
+    background: #172030;
+    border-radius: 20px;
+    color: #b1b7be;
+}
+#LabelName{
+
+}
+#LabelMain{
+
+}
+#name{
+
+}
+#main{
+
 }
 
