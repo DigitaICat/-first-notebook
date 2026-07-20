@@ -18,7 +18,7 @@ let request = document.createElement("script");
         let description = document.createElement("h3");
         //dialog.classList.add("note");
         BtnClose.id = ("BtnClose");
-        BtnCreate.id = ("add");
+        BtnCreate.id = ("AddSection");
         InputName.id = ("InputName");
         InputMain.id = ("InputMain");
         LabelName.id = ("LabelName");
@@ -32,7 +32,7 @@ let request = document.createElement("script");
         BtnClose.textContent = ("X");
         name.textContent = "Note title";
         description.textContent = "Note";
-        let add = document.querySelector("#add");
+        let AddSection = BtnCreate;
         main.append(dialog);
         dialog.append(DivClose);
         DivClose.append(BtnClose);
@@ -42,22 +42,34 @@ let request = document.createElement("script");
         form.append(description);
         form.append(InputMain);
         form.append(DivCreate);
-        DivCreate.append(BtnCreate); 
+        DivCreate.append(BtnCreate);
         BtnCreate.textContent = "create";
+        BtnClose.addEventListener("click", function (event) {
+            event.preventDefault();
+            dialog.close();
+        })
+        AddSection.addEventListener("click", function (event) { 
+            event.preventDefault();
+            //let number = count;
+            let section = document.createElement("section");
+            section.id = (`section${count}`);
+            section.classList.add("note");
+            AddRequest.after(section);
+            let SectionHeder = document.createElement("h3");
+            let SectionDel = document.createElement("button");
+            let SectioBodu = document.createElement("p");
+           
+            section.append(SectionDel);
+            section.append(SectionHeder);
+            section.append(SectioBodu);
+            SectionDel.textContent("X");
+            SectionDel.addEventListener("click", function (event) {
+                event.preventDefault();
+                section.close();
+            })
+            dialog.close();
+            count++;
+        })
         dialog.showModal();
-
     })
-    add.addEventListener("click", function () { 
-        let section = document.createElement("section");
-        section.id = (`section${count}`);
-        section.classList.add("note");
-        add.after(section);
-        let SectionHeder = document.createElement("h3");
-        let SectionDel = document.createElement("button");
-        let SectioBodu = document.createElement("p");
 
-        section.append(SectionHeder);
-        section.append(SectionDel);
-        section.append(SectioBodu);
-        count++;
-    })

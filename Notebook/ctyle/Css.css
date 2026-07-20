@@ -78,7 +78,7 @@ dialog{
     display: flex;
     justify-content: right;
 }
-#add{
+#AddSection{
     background: #111827;
     color: #068e33;
     display: block;
