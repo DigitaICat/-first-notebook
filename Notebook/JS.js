@@ -2,6 +2,8 @@ let AddRequest = document.querySelector ("#create_request");
 let main = document.querySelector ("main");
 let mainElement = main.firstElementChild;
 let count = 1;
+const titleArchive = [];
+const textArchive = [];
 let request = document.createElement("script");
     AddRequest.addEventListener("click", function () {
         let dialog = document.createElement("dialog");
@@ -51,6 +53,10 @@ let request = document.createElement("script");
         AddSection.addEventListener("click", function (event) { 
             event.preventDefault();
             //let number = count;
+            let inputTitleValue = InputName.value;
+            let inputMainValue = InputMain.value;
+            titleArchive.push(inputTitleValue);
+            textArchive.push(inputMainValue);
             let section = document.createElement("section");
             section.id = (`section${count}`);
             section.classList.add("note");
@@ -58,14 +64,16 @@ let request = document.createElement("script");
             let SectionHeder = document.createElement("h3");
             let SectionDel = document.createElement("button");
             let SectioBodu = document.createElement("p");
-           
+            SectionDel.classList.add("BtnClose");
+            SectionHeder.textContent = titleArchive[titleArchive.length - 1];
+            SectioBodu.textContent = textArchive[textArchive.length - 1];
             section.append(SectionDel);
             section.append(SectionHeder);
             section.append(SectioBodu);
-            SectionDel.textContent("X");
+            SectionDel.textContent = ("X");
             SectionDel.addEventListener("click", function (event) {
                 event.preventDefault();
-                section.close();
+                section.remove();
             })
             dialog.close();
             count++;

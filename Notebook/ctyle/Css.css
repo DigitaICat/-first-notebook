@@ -40,6 +40,19 @@ dialog{
     height: 50px;
     width: 50px;
 }
+.BtnClose{
+    
+    background: #111827;
+    color: #068e33;
+    display: block;
+    /* border: 1px solid rgb(29, 28, 28); */
+    border-radius: 120px;
+}
+.note{
+    background: #363f49;
+    border-radius: 20px;
+    padding: 15px;
+}
 #logo{
     display: block;
     width: 120px;
@@ -68,11 +81,6 @@ dialog{
     border-radius: 20px;
     padding: 5px;
     color: #767c84;
-}
-#note{
-    background: #363f49;
-    border-radius: 20px;
-    padding: 15px;
 }
 #DivCreate{
     display: flex;
