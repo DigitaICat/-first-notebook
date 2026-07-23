@@ -25,6 +25,15 @@ a{
 p{
     margin: 0;
 }
+ul{
+    list-style-type: none;
+}
+button{
+    background: #2f353c;
+    border-radius: 20px;
+    padding: 5px;
+    color: #767c84;
+}
 dialog{
     /* display: grid; */
     background: #222830;
@@ -49,9 +58,11 @@ dialog{
     border-radius: 120px;
 }
 .note{
+    grid-column: auto;
     background: #363f49;
     border-radius: 20px;
     padding: 15px;
+    justify-content: left;
 }
 #logo{
     display: block;
@@ -60,12 +71,28 @@ dialog{
 }
 #name{
     display: block;
+    
+}
+#DivBtnCreate{
+    justify-content: center;
+    text-align: center;
+}
+#NameContent{
+    justify-content: center;
+    text-align: center;
 }
 #navigation{
-    display: block;
+    justify-content: center;
+    text-align: center;
+    
 }
 #navigationList{
     display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0;
+    list-style: none
+    
 }
 #author{
     display: block;
@@ -93,7 +120,7 @@ dialog{
     /* border: 1px solid rgb(29, 28, 28); */
     border-radius: 120px;
 }
-#DivClose{
+.DivClose{
     display: flex;
     justify-content: right;
 }
